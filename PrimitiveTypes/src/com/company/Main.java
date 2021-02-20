@@ -2,13 +2,22 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
-        byte myByte = 100;
-        short myShort = 1_000;
-        int myInt = 10_000;
-        long myLong = 50_000+ 10 *(myByte+myShort+myInt);
+    public static void operatorChallenge()
+    {
+        double myDouble = 20.00;
+        double mySecDouble = 80.00;
+        double doubleSum = (myDouble+mySecDouble)*100.00;
+        double reminder = doubleSum % 40.00;
 
-        System.out.println("my long "+ myLong);
+        boolean checkReminder = (reminder==0.0)? true:false;
+
+        if(!checkReminder) {
+            System.out.println("Get some reminder");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        operatorChallenge();
     }
 }
